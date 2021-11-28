@@ -1,6 +1,6 @@
 var success = function (body) {
     var ret = body.target[0].target.replace(/(^\s*)|(\s*$)/g, "");
-    window.location.href = "https://stackoverflow.com/search?q=answers:" + ret;
+    window.location.href = "https://stackoverflow.com/search?q=" + ret;
 }
 
 var getEnglish = function (chinese) {
