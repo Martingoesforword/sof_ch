@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class=""><!--STATUS OK-->
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script src="./getTrans.js"></script>
+<link rel="stylesheet" href="./weui.css">
+
+<body>
+<img src="baidu_files/plus_logo_web_2.png" style="width: 80%; margin-left: 10%;margin-bottom: 20px">
+
+<label for="index-kw" class="weui-cell weui-cell_active" id="js_cell">
+    <div class="weui-cell__hd"><span class="weui-label">问题 </span></div>
+    <div class="weui-cell__bd weui-flex">
+        <input id="index-kw" class="weui-input" type="text" pattern="[0-9]*" placeholder="请输入搜索问题" maxlength="16">
+        <button id="js_input_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear" wah-hotarea="touchend">
+            <i class="weui-icon-clear"></i>
+        </button>
+    </div>
+</label>
+<br>
+<button class="weui-btn weui-btn_primary" id="index-bn" onclick="getEnglish(document.getElementById('index-kw').value)">
+    搜索栈溢出
+</button>
+</body>
+</html>
