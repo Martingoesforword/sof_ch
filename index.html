@@ -9,14 +9,14 @@
 <link rel="stylesheet" href="./weui.css">
 
 <body>
-<img src="baidu_files/plus_logo_web_2.png" style="width: 80%; margin-left: 10%;margin-bottom: 20px">
+<img src="baidu_files/plus_logo_web_2.png" style="width: 80%; margin-left: 10%;margin-bottom: 20px; margin-top: 10%;">
 
 <label for="index-kw" class="weui-cell weui-cell_active" id="js_cell">
     <div class="weui-cell__hd"><span class="weui-label">问题 </span></div>
     <div class="weui-cell__bd weui-flex">
         <input id="index-kw" class="weui-input" type="text" pattern="[0-9]*" placeholder="请输入搜索问题" maxlength="16">
-        <button id="js_input_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear" wah-hotarea="touchend">
-            <i class="weui-icon-clear"></i>
+        <button id="js_input_clear"  class="weui-btn_reset weui-btn_icon weui-btn_input-clear" onclick="document.getElementById('index-kw').value =''">
+            <i class="weui-icon-clear" ></i>
         </button>
     </div>
 </label>
@@ -24,5 +24,6 @@
 <button class="weui-btn weui-btn_primary" id="index-bn" onclick="getEnglish(document.getElementById('index-kw').value)">
     搜索栈溢出
 </button>
+
 </body>
 </html>
